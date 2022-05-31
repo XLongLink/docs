@@ -46,7 +46,7 @@ const config = {
         o: null,
         open: null,
         'open-browser': null,
-        root: 'C:\\Users\\Administrator\\Desktop\\test\\.docz',
+        root: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz',
         base: '/',
         source: './',
         'gatsby-root': null,
@@ -65,30 +65,32 @@ const config = {
         p: 3000,
         separator: '-',
         paths: {
-          root: 'C:\\Users\\Administrator\\Desktop\\test',
+          root: 'C:\\Users\\Administrator\\LongLink\\docs',
           templates:
-            'C:\\Users\\Administrator\\Desktop\\test\\node_modules\\docz-core\\dist\\templates',
-          docz: 'C:\\Users\\Administrator\\Desktop\\test\\.docz',
-          cache: 'C:\\Users\\Administrator\\Desktop\\test\\.docz\\.cache',
-          app: 'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app',
+            'C:\\Users\\Administrator\\LongLink\\docs\\node_modules\\docz-core\\dist\\templates',
+          docz: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz',
+          cache: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\.cache',
+          app: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app',
           appPackageJson:
-            'C:\\Users\\Administrator\\Desktop\\test\\package.json',
-          appTsConfig: 'C:\\Users\\Administrator\\Desktop\\test\\tsconfig.json',
+            'C:\\Users\\Administrator\\LongLink\\docs\\package.json',
+          appTsConfig:
+            'C:\\Users\\Administrator\\LongLink\\docs\\tsconfig.json',
           gatsbyConfig:
-            'C:\\Users\\Administrator\\Desktop\\test\\gatsby-config.js',
+            'C:\\Users\\Administrator\\LongLink\\docs\\gatsby-config.js',
           gatsbyBrowser:
-            'C:\\Users\\Administrator\\Desktop\\test\\gatsby-browser.js',
-          gatsbyNode: 'C:\\Users\\Administrator\\Desktop\\test\\gatsby-node.js',
-          gatsbySSR: 'C:\\Users\\Administrator\\Desktop\\test\\gatsby-ssr.js',
+            'C:\\Users\\Administrator\\LongLink\\docs\\gatsby-browser.js',
+          gatsbyNode:
+            'C:\\Users\\Administrator\\LongLink\\docs\\gatsby-node.js',
+          gatsbySSR: 'C:\\Users\\Administrator\\LongLink\\docs\\gatsby-ssr.js',
           importsJs:
-            'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app\\imports.js',
+            'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app\\imports.js',
           rootJs:
-            'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app\\root.jsx',
+            'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app\\root.jsx',
           indexJs:
-            'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app\\index.jsx',
+            'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app\\index.jsx',
           indexHtml:
-            'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app\\index.html',
-          db: 'C:\\Users\\Administrator\\Desktop\\test\\.docz\\app\\db.json',
+            'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app\\index.html',
+          db: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz\\app\\db.json',
         },
       },
     },

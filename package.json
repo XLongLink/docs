@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "npx docz dev",
 		"clean": "rd -r /.docz/.cache",
-		"build": "npx docz build",
+		"build": "npx docz build && mkdir dist && xcopy .\\.docz\\dist .\\dist\\ /s /y ",
 		"serve": "npx docz build && docz serve"
 	},
 	"keywords": [],

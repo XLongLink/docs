@@ -7,7 +7,10 @@
     "repository": null,
     "native": false,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "ignore": [
+      "README.md"
+    ]
   },
   "entries": [
     {
@@ -18,7 +21,7 @@
         "hidden": false,
         "id": "dcb8d76187bb876677644bdd455b2636",
         "filepath": "docs/introduction.mdx",
-        "fullpath": "C:\\Users\\Administrator\\Desktop\\test\\docs\\introduction.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\introduction.mdx",
         "link": "",
         "slug": "docs-introduction",
         "menu": "",
@@ -40,7 +43,7 @@
         "hidden": false,
         "id": "65ef5460d45beb7bc1eda6bc7e0dc571",
         "filepath": "docs/Section_1/element1.mdx",
-        "fullpath": "C:\\Users\\Administrator\\Desktop\\test\\docs\\Section_1\\element1.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_1\\element1.mdx",
         "link": "",
         "slug": "docs-section-1-element1",
         "headings": [
@@ -60,7 +63,7 @@
         "hidden": false,
         "id": "8ff399b8766c2fb738289a8a346b3586",
         "filepath": "docs/Section_1/element2.mdx",
-        "fullpath": "C:\\Users\\Administrator\\Desktop\\test\\docs\\Section_1\\element2.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_1\\element2.mdx",
         "link": "",
         "slug": "docs-section-1-element2",
         "route": "/docs-section-1-element2",
@@ -81,7 +84,7 @@
         "hidden": false,
         "id": "f982b94f5748a5e8e18b3322b6487514",
         "filepath": "docs/Section_2/element1.mdx",
-        "fullpath": "C:\\Users\\Administrator\\Desktop\\test\\docs\\Section_2\\element1.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_2\\element1.mdx",
         "link": "",
         "slug": "docs-section-2-element1",
         "route": "/docs-section-2-element1",
@@ -102,7 +105,7 @@
         "hidden": false,
         "id": "87e5d1988c6c57d96c38ac9c6ab7b832",
         "filepath": "docs/Section_2/element2.mdx",
-        "fullpath": "C:\\Users\\Administrator\\Desktop\\test\\docs\\Section_2\\element2.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_2\\element2.mdx",
         "link": "",
         "slug": "docs-section-2-element2",
         "route": "/docs-section-2-element2",
