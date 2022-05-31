@@ -14,16 +14,16 @@
   },
   "entries": [
     {
-      "key": "docs/introduction.mdx",
+      "key": "pages/introduction.mdx",
       "value": {
         "name": "Introduction",
         "route": "/",
         "hidden": false,
-        "id": "dcb8d76187bb876677644bdd455b2636",
-        "filepath": "docs/introduction.mdx",
-        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\introduction.mdx",
+        "id": "3779e48462ad7b8e0d85cb3c4cf7411d",
+        "filepath": "pages/introduction.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\pages\\introduction.mdx",
         "link": "",
-        "slug": "docs-introduction",
+        "slug": "pages-introduction",
         "menu": "",
         "headings": [
           {
@@ -35,17 +35,17 @@
       }
     },
     {
-      "key": "docs/Section_1/element1.mdx",
+      "key": "pages/Section_1/element1.mdx",
       "value": {
         "menu": "Sezione 1",
         "route": "/custom-route",
         "name": "Esempio 1",
         "hidden": false,
-        "id": "65ef5460d45beb7bc1eda6bc7e0dc571",
-        "filepath": "docs/Section_1/element1.mdx",
-        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_1\\element1.mdx",
+        "id": "66df84186c7fbe3504ed862de727071f",
+        "filepath": "pages/Section_1/element1.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\pages\\Section_1\\element1.mdx",
         "link": "",
-        "slug": "docs-section-1-element1",
+        "slug": "pages-section-1-element1",
         "headings": [
           {
             "slug": "elemento-1",
@@ -56,17 +56,17 @@
       }
     },
     {
-      "key": "docs/Section_1/element2.mdx",
+      "key": "pages/Section_1/element2.mdx",
       "value": {
         "menu": "Sezione 1",
         "name": "Esempio 2",
         "hidden": false,
-        "id": "8ff399b8766c2fb738289a8a346b3586",
-        "filepath": "docs/Section_1/element2.mdx",
-        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_1\\element2.mdx",
+        "id": "6c5b0b7d8c6a86610739bb5f4cbdb247",
+        "filepath": "pages/Section_1/element2.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\pages\\Section_1\\element2.mdx",
         "link": "",
-        "slug": "docs-section-1-element2",
-        "route": "/docs-section-1-element2",
+        "slug": "pages-section-1-element2",
+        "route": "/pages-section-1-element2",
         "headings": [
           {
             "slug": "elemento-2",
@@ -77,17 +77,17 @@
       }
     },
     {
-      "key": "docs/Section_2/element1.mdx",
+      "key": "pages/Section_2/element1.mdx",
       "value": {
         "menu": "Sezione 2",
         "name": "Esempio 1",
         "hidden": false,
-        "id": "f982b94f5748a5e8e18b3322b6487514",
-        "filepath": "docs/Section_2/element1.mdx",
-        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_2\\element1.mdx",
+        "id": "68b96aab570bd5a71231f51ef95b854f",
+        "filepath": "pages/Section_2/element1.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\pages\\Section_2\\element1.mdx",
         "link": "",
-        "slug": "docs-section-2-element1",
-        "route": "/docs-section-2-element1",
+        "slug": "pages-section-2-element1",
+        "route": "/pages-section-2-element1",
         "headings": [
           {
             "slug": "elemento-1",
@@ -98,17 +98,17 @@
       }
     },
     {
-      "key": "docs/Section_2/element2.mdx",
+      "key": "pages/Section_2/element2.mdx",
       "value": {
         "menu": "Sezione 2",
         "name": "Esempio 2",
         "hidden": false,
-        "id": "87e5d1988c6c57d96c38ac9c6ab7b832",
-        "filepath": "docs/Section_2/element2.mdx",
-        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\docs\\Section_2\\element2.mdx",
+        "id": "0927e8fd28ba3566ba00051d1b7f51cc",
+        "filepath": "pages/Section_2/element2.mdx",
+        "fullpath": "C:\\Users\\Administrator\\LongLink\\docs\\pages\\Section_2\\element2.mdx",
         "link": "",
-        "slug": "docs-section-2-element2",
-        "route": "/docs-section-2-element2",
+        "slug": "pages-section-2-element2",
+        "route": "/pages-section-2-element2",
         "headings": [
           {
             "slug": "elemento-2",
