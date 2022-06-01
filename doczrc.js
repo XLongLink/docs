@@ -36,7 +36,6 @@ export default {
 			navigation: true,
 		},
 		logo: {
-			// src: '/public/assets/logo.svg' // use this line if you want one logo for both color modes
 			src: {
 				light: "/public/assets/NT.svg",
 				dark: "/public/assets/BT.svg",

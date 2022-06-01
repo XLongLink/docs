@@ -1,15 +1,15 @@
 {
-	"name": "@nejcm/demo",
-	"version": "2.0.14",
-	"description": "@nejcm/docz-theme-extended documentation and demo.",
+	"name": "LongLinkDocs",
+	"version": "1.0.0",
+	"description": "LongLink official documentation",
 	"main": "index.js",
 	"author": "",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nejcm/docz-theme-extended"
+		"url": "https://github.com/XLongLink/docs"
 	},
-	"homepage": "https://github.com/nejcm/docz-theme-extended",
+	"homepage": "https://github.com/XLongLink/docs",
 	"scripts": {
 		"test": "echo 'No tests to run.'",
 		"clean": "npx rimraf .docz && npx docz clean",
@@ -20,9 +20,11 @@
 	"dependencies": {
 		"@nejcm/docz-theme-extended": "*",
 		"docz": "2.3.1",
-		"react": "16.13.1",
-		"react-dom": "16.13.1",
 		"prop-types": "15.7.2",
-		"rimraf": "3.0.2"
+		"react": "16.13.1",
+		"react-dom": "16.13.1"
+	},
+	"devDependencies": {
+		"rimraf": "^3.0.2"
 	}
 }
