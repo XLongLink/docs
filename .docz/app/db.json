@@ -10,7 +10,8 @@
     "separator": "-",
     "ignore": [
       "README.md"
-    ]
+    ],
+    "dest": "../docs/docs/"
   },
   "entries": [
     {
