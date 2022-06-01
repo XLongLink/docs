@@ -11,7 +11,8 @@
     "ignore": [
       "README.md"
     ],
-    "dest": "../docs/docs/"
+    "dest": "../docs/docs/",
+    "base": "/docs"
   },
   "entries": [
     {

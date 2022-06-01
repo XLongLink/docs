@@ -16,7 +16,7 @@ if (hasGatsbyConfig) {
 }
 
 const config = {
-  pathPrefix: '/',
+  pathPrefix: '/docs',
 
   siteMetadata: {
     title: 'Test',
@@ -47,7 +47,7 @@ const config = {
         open: null,
         'open-browser': null,
         root: 'C:\\Users\\Administrator\\LongLink\\docs\\.docz',
-        base: '/',
+        base: '/docs',
         source: './',
         'gatsby-root': null,
         files: '**/*.{md,markdown,mdx}',
