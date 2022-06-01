@@ -1,0 +1,82 @@
+---
+name: Tag
+route: /api/tag
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Tag } from '@nejcm/docz-theme-extended';
+
+# Hint
+
+### Usage
+
+```jsx
+import { Tag } from '@nejcm/docz-theme-extended';
+```
+
+<hr />
+
+### Types
+
+<Playground>
+  <Tag>default</Tag>
+  <br />
+  <Tag type="info">info</Tag>
+  <br />
+  <Tag type="warning">warning</Tag>
+  <br />
+  <Tag type="danger">danger</Tag>
+  <br />
+  <Tag type="success">success</Tag>
+</Playground>
+
+### Sizes
+
+<Playground>
+  <Tag size="small">small</Tag>
+  <br />
+  <Tag>default</Tag>
+  <br />
+  <Tag size="medium">medium</Tag>
+  <br />
+  <Tag size="large">large</Tag>
+</Playground>
+
+### Radius
+
+<Playground>
+  <Tag radius={10}> 10 = 10px </Tag>
+  <br />
+  <Tag radius="1em"> 1em </Tag>
+  <br />
+  <Tag radius={0}> 0 </Tag>
+  <br />
+  <Tag radius="3px"> 3px </Tag>
+</Playground>
+
+### Custom
+
+<Playground>
+  <Tag circle type="danger">
+    3
+  </Tag>
+  <br />
+  <Tag circle type="success">
+    <small>+99</small>
+  </Tag>
+  <br />
+  <Tag circle size="large" type="warning">
+    <strong>1</strong>
+  </Tag>
+  <br />
+  <Tag style={{ backgroundColor: '#333' }}>
+    📦 <strong>with icon and custom bg color</strong>
+  </Tag>
+</Playground>
+
+### Props
+
+<Props table={true} of={Tag} />
+
+<hr />

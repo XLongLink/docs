@@ -1,22 +1,23 @@
-**/node_modules
-**/coverage
-**/dist
+node_modules
+coverage
+dist
+.docz
 .opt-in
 .opt-out
 .DS_Store
 .next
 .eslintcache
-**/.docz
-**/.storybook-static
+.docz
+.storybook-static
 .vscode
 .cache
 
 # testing
-**/coverage
+/coverage
 
 # production
-**/build
-**/dist
+/build
+/dist
 
 # misc
 .DS_Store
@@ -32,4 +33,4 @@ yarn-error.log*
 # these cause more harm than good
 # when working with contributors
 package-lock.json
-/.vscode/launch.json
+yarn.lock

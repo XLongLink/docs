@@ -1,0 +1,212 @@
+---
+name: Menu
+route: /ui/menu
+menu: UI
+tags: ui, menu, search, groups, menu headings, user interface, submenu, sub menu, inline menu
+---
+
+import { Hint, InlineCode } from '@nejcm/docz-theme-extended';
+import submenuPic from '../../public/assets/submenu.jpg';
+
+# Menu
+
+Improved and redesigned menu:
+
+- Menu search
+- Right side headings menu with scroll detection
+- Menu groups
+- Sub menus
+- Menu display names
+
+## Config
+
+### Search
+
+Inside `doczrc.js` file there is a `themeConfig.menu.search` option to enable or disable search.
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    menu: {
+      search: true,
+    },
+  },
+};
+```
+
+#### Options
+
+| Name   |   Type    | Default | Description                                 |
+| :----- | :-------: | :-----: | :------------------------------------------ |
+| search | `boolean` | `true`  | Specify if the menu search should be shown. |
+
+<hr />
+
+### Headings
+
+Inside `doczrc.js` file there is a `themeConfig.menu.headings` option.
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    menu: {
+      headings: {
+        rightSide: true,
+        scrollspy: true,
+        depth: 3,
+      },
+    },
+  },
+};
+```
+
+#### Options
+
+| Name      |   Type    | Default | Description                                                 |
+| :-------- | :-------: | :-----: | :---------------------------------------------------------- |
+| rightSide | `boolean` | `false` | Specify if the headings menu on the right should be shown.  |
+| scrollspy | `boolean` | `true`  | Specify if the headings menu should have scrollspy enabled. |
+| depth     | `number`  |   `3`   | Specify the depth of headings to be shown. (1 - 6)          |
+
+<hr />
+
+### Groups
+
+Menu items can now be grouped into labeled sections. Inside `doczrc.js` file there is a `groups` option.
+The option receives an object where the key is the section name and the value is an array of menu items.
+The order of items is reflected in the menu.
+
+<Hint type="info">An empty key ('') represents ungrouped values.</Hint>
+
+<Hint type="warning">
+  Only top level menu items or menu groups can be grouped into sections.
+</Hint>
+
+```js
+//doczrc.js
+export default {
+  groups: {
+    '': [],
+    API: ['Components', 'UI'],
+  },
+};
+```
+
+#### Options
+
+| Name   |   Type   | Default | Description                                                                                           |
+| :----- | :------: | :-----: | :---------------------------------------------------------------------------------------------------- |
+| groups | `object` |         | Specify menu groups where object key is the group name and the value is an array of documents / pages |
+
+<hr />
+
+### Sub menus
+
+Menu items can now have one level of submenus.
+Inside each document there is a `submenu` option.
+
+<img src={submenuPic} alt="Submenus" />
+
+```mdx
+---
+name: Footer
+route: /ui/footer
+menu: UI
+submenu: Bottom
+tags: ui, footer, footer config, theme, user interface, submenu, sub menu
+---
+
+# My mdx file
+```
+
+#### Options
+
+| Name    |   Type   | Default | Description     |
+| :------ | :------: | :-----: | :-------------- |
+| submenu | `string` |         | Name of submenu |
+
+#### Sorting
+
+<Hint type="warning">
+  Sub menus do not have any custom sorting option. For this the docz{' '}
+  <InlineCode>menu</InlineCode> option inside <InlineCode>doczrc.js</InlineCode>{' '}
+  file can be used. Check example bellow.
+</Hint>
+
+Menu:
+
+```
+Item 1
+Item 2
+Item 3
+  > Item 3.1
+  > Item 3.2
+Item 4
+Item 5
+  > Item 5.1
+  > Sub-menu 5.2
+    > Item 5.2.1
+    > Item 5.2.2
+    > Item 5.2.3
+  > Item 5.3
+  > Sub-menu 5.4
+    > Item 5.4.1
+  > Item 5.5
+Item 6
+```
+
+Code:
+
+```js
+//doczrc.js
+export default {
+  menu: [
+    'Item 1',
+    'Item 2',
+    { name: 'Item 3', menu: ['Item 3.1', 'Item 3.2'] },
+    'Item 4',
+    {
+      name: 'Item 5',
+      menu: [
+        'Item 5.1',
+        'Item 5.2.1', // 1st item from Sub-menu 5.2
+        'Item 5.2.2', // 2nd item from Sub-menu 5.2
+        'Item 5.2.3', // 3rd item from Sub-menu 5.2
+        'Item 5.3',
+        'Item 5.4.1', // 1st item from Sub-menu 5.4
+        'Item 5.5',
+      ],
+    },
+    'Item 6',
+  ],
+};
+```
+
+<hr />
+
+### Menu display name
+
+To allow having menus with the same name a `menuDisplayName` option can be set inside `doczrc.js` file.
+The option receives an object where the key represents the document `name` and the value is a string to be displayed in the menu.
+
+<Hint type="warning">
+  This also applies to <InlineCode>menu</InlineCode> names.
+</Hint>
+
+```js
+//doczrc.js
+export default {
+  menuDisplayName: {
+    UI: 'User Interface',
+    Main: 'Main Container',
+  },
+};
+```
+
+#### Options
+
+| Name            |   Type   | Default | Description                                                                                       |
+| :-------------- | :------: | :-----: | :------------------------------------------------------------------------------------------------ |
+| menuDisplayName | `object` |         | Specify menu display name where object key is the document name and the value is the display name |

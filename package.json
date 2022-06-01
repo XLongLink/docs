@@ -1,19 +1,21 @@
 {
-	"name": "test",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "npx docz dev",
-		"clean": "rd -r /.docz/.cache",
-		"build": "npx docz build",
-		"serve": "npx docz build && docz serve"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"docz": "^2.4.0",
-		"remark-mdx": "^2.0.0-next.9"
-	}
+  "private": true,
+  "workspaces": [
+    "theme",
+    "demo"
+  ],
+  "scripts": {
+    "demo": "yarn demo:dev",
+    "demo:dev": "yarn workspace @nejcm/demo dev",
+    "demo:build": "yarn workspace @nejcm/demo build",
+    "demo:clean": "yarn workspace @nejcm/demo clean",
+    "lint": "yarn workspace @nejcm/docz-theme-extended lint",
+    "dev": "yarn workspace @nejcm/docz-theme-extended dev",
+    "clean": "yarn workspace @nejcm/docz-theme-extended clean",
+    "build": "yarn workspace @nejcm/docz-theme-extended build",
+    "test": "yarn workspace @nejcm/docz-theme-extended test"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
