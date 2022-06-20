@@ -1,0 +1,56 @@
+---
+name: Introduzione
+route: /
+---
+
+import { Hint } from '@nejcm/docz-theme-extended';
+
+<Hint type="warning" variant="outer">
+    Warning: proof of concept
+</Hint>
+
+# Introduzione
+
+LongLink (LL) nasce per aiutare i developers a sviluppare applicazioni decentralizzate 
+(dApp) dell'ecosistema di Algorand. L'obiettivo di LL è quello di semplificare e 
+velocizzare il più possibile la programmazione rimanendo il più generale possibile 
+per non limitare le idee dei creatori. LL vuole raggiungere questo obiettivo 
+implementando Algorand standards (ARCs) e progetti che puntano ad uno sviluppo 
+più rapido o arricchiscono il risultato finale. Per il resto di questo testo 
+verranno chiamate dApp di Layer 1 (dAL1) tutte quelle applicazioni che accedono 
+direttamente alla blockchain e servono a arricchire, semplificare o completare 
+applicazioni di Layer 2 (dAL2) esempi di dAL1 sono: purestake, algonode, 
+nf.domains, perawallet, … 
+Il collegamento tramite dAL1 e la blockchain è permesso tramite sdk ufficiali creati da 
+Algorand foundation, LL vuole creare un collegamento simile tra i due layer di 
+applicazioni. 
+Implementare ad uno ad uno tutti gli standard richiede un sacco di tempo e di test, 
+utilizzando LL i developer avranno tutto già pronto ad essere implementato nella loro 
+applicazione, per finire un progetto in un tempo lampo. ![Alt text](..\public\assets\PiramideDApp.png "title")
+LL solve due grandi problemi per l’ecosistema, il primo è quello di scalabilità in 
+quanto permette a nuove dAL1 di venire implementate direttamente nelle applicazioni 
+già esistenti. Come secondo questo garantisce un maggior livello di solidità 
+all’ecosistema, in quanto se una dAL1 va offline o riscontra un problema di sicurezza 
+che la fa fallire è possibile rimpiazzarlo da uno nuovo senza dover riprogrammare 
+l’intero ecosistema. 
+Ovviamente numerosi sono i progetti che possono essere implementati ed è difficile 
+decidere qual’è più importante di un altro.  A tal proposito nella decisione di LL di 
+implementare dei progetti può variare a dipendenza dell’utilità, utilizzo, stabilità e 
+grado di decentralizzazione. Oltre a questo prima di implementare un progetto LL 
+contatterà gli autori del progetto stesso nel tentativo di raggiungere una collaborazione. 
+Per i progetti che non vengono implementati ufficialmente da LL, sarà possibile creare 
+plugin da implementare nel proprio progetto. I plugin possono aggiungere funzioni come:
+API da cui accedere ai dati della chain, collegamento a wallets, progetti di swap to 
+token, domini, …
+Le dApp sviluppate con LL saranno dApp ibride, dove una parte dei dati e della logica 
+sarà gestita dalla Blockchain, mentre altri dati non sensibili o parti di logica troppo 
+grandi, costose o semplicemente troppo lente da far eseguire dalla blockchain verranno 
+gestite dall’applicazione stessa. 
+Ovviamente questo ha senso con certi progetti fino ad un limite. È possibile che 
+diversi progetti implementino delle funzionalità differenti e quindi non è possibile 
+renderli compatibili al 100%. Ma con dAL1 standard come nodi, explorer, swap, wallets, 
+NFD,... è possibile creare un'implementazione generale in quanto ogni applicazione ha 
+funzionalità simili.
+LL si focalizzerà principalmente nello sviluppo di applicazioni web, in particolare 
+per implementazioni in vanilla js e reactjs.
+Alcuni esempi di dAL2 che è possibile creare tramite LL sono: games, defi, social, …

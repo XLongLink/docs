@@ -1,0 +1,83 @@
+---
+name: User authentication (ARC-0014)
+route: /Wallet/User authentication (ARC-0014)
+menu: Wallet
+---
+
+import { Hint } from '@nejcm/docz-theme-extended';
+
+<Hint type="warning" variant="outer">
+    Warning: proof of concept
+</Hint>
+
+# User authentication (ARC-0014)
+
+Sebbene i wallet hanno un sistema di connessione differente, la struttura di 
+autenticazione sarà simile in tutti i casi.
+Come precisato nella lunga descrizione in ARC-0014, l’autenticazione dell’utente 
+avviene in 2 passaggi. La prima si tratta di un login al proprio wallet tramite il 
+protocollo walletconnect. La seconda è un autenticazione tramite la firma di una 
+transazione nulla che non verrà eseguita dal network. L’hash della transazione serve 
+ad autenticare che l’utente dispone della chiave privata, infatti grazie alla 
+combinazione della chiave pubblica e dell’hash della transazione è  possibile 
+confermare che l’utente dispone della chiave privata con cui è stata firmata la 
+transazione e quindi proprietario dell’account.
+L’hash della transazione (token) viene successivamente inviato a LLS che controlla 
+l’autenticità del token e lo converte in Json Web Token (JWT), che verrà usato in ogni 
+richiesta HTTP autenticare l’utente.
+Il seguente schema mostra il procedimento di autenticazione:
+
+Ogni token avrà una durata limitata, ogni LLS avrà un valore predefinito di durata che 
+è possibile modificare nella dashboard del sito. 
+LL chiamerà un endpoint nel LLS in modo automatico per sapere la durata del token.
+È possibile verificare in qualsiasi momento se un utente è loggato o autenticato 
+tramite:
+```jsx
+ll.isLogged: boolean
+ll.isAuthenticate: boolean
+```
+Inoltre le seguenti funzioni verranno utilizzate per loggare ed autenticare l’utente:
+Per loggare l’utente:
+```jsx
+ll.login(showQRCode: boolean, net: NetName)
+```
+Una volta chiamata, la funzione crea una sessione di walletconnect. Nel caso in cui 
+“openQRCode” sia true (default) e si stia utilizzando js in un browser, verrà aperto 
+un popup con il qr code, altrimenti verrà loggato in console l’uri di walletconnect. 
+È possibile indicare il tipo di rete in cui si vuole connettere: Mainnet, Betanet, 
+Testnet
+Per autenticare l'utente:
+```jsx
+ll.authenticate(openPopup: boolean)
+```
+In modo simile alla funzione di login, nel caso di un browser verrà aperto un popup 
+con le informazioni, altrimenti verranno loggate in console.
+La funzione manderà una richiesta di transazione al wallet, la transazione avrà 0 fee 
+e quindi rifiutata dalla blockchain. L’utente verrà informato tramite il popup sul 
+perché deve firmare la transazione. Nel popup verrà avvisato l’utente di controllare 
+che la transazione che sta firmando riguarda l’applicazione in uso.
+Token:
+Il token verrà salvato nel localstorage con la key “authtoken”, è possibile accedere 
+al token ed al JWT tramite:
+```jsx
+ll.token: string
+ll.jwtoken: string
+```
+ma in più dei casi LL gestirà il token nelle richiesta api direttamente e quindi non 
+è necessario passarlo manualmente.
+Nota: le proprietà di un token JWT permettono al developer di creare un altro server 
+per eventuali necessità e di controllare l’autenticità dell’utente in modo immediato.
+Disconnect:
+```jsx
+ll.logout()
+```
+disconnette l’utente, termina la sessione di walletconnect, nel caso in cui 
+ll.linkTokenWc sia true, il token ed il JWT verranno cancellati dal localstorage e 
+sarà necessario effettuare un'autenticazione nuovamente. È possibile settare 
+linkTokenWc come le altre opzione dalla dashboard della propria applicatione.
+Ulteriori modifiche possono essere effettuate a dipendenza delle necessità della 
+community e per problemi di sicurezza
+
+Spiegazione: https://github.com/algorandfoundation/ARCs/pull/84/fil
+
+
