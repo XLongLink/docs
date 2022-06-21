@@ -1,7 +1,6 @@
 ---
 name: User authentication (ARC-0014)
 route: /Wallet/User authentication (ARC-0014)
-menu: Wallet
 ---
 
 import { Hint } from '@nejcm/docz-theme-extended';
@@ -26,6 +25,7 @@ L’hash della transazione (token) viene successivamente inviato a LLS che contr
 l’autenticità del token e lo converte in Json Web Token (JWT), che verrà usato in ogni 
 richiesta HTTP autenticare l’utente.
 Il seguente schema mostra il procedimento di autenticazione:
+
 
 Ogni token avrà una durata limitata, ogni LLS avrà un valore predefinito di durata che 
 è possibile modificare nella dashboard del sito. 

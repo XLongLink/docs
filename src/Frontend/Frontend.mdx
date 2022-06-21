@@ -1,0 +1,20 @@
+---
+name: Frontend
+route: /Frontend/
+---
+
+import { Hint } from '@nejcm/docz-theme-extended';
+
+<Hint type="warning" variant="outer">
+    Warning: proof of concept
+</Hint>
+
+# Frontend
+Nei seguenti capitoli, verranno fornite informazioni dettagliate sulla struttura e 
+sul funzionamento del client.
+La struttura sarà la seguente, la parte di frontend (che può essere un sito internet 
+o un'applicazione con nodejs) comunicherà al server di LongLink (LLS) tramite 
+richieste REST API. Ogni applicazione avrà un LLS privato che può essere hostato 
+con facilità da LL. A tal proposito, la dashboard del server verrà hostata nel SSL 
+dell’applicazione e non del sito principale di LL. In questo modo il developer può 
+usare le tecnologie anche senza centralizzare l’applicazione su un unico server.

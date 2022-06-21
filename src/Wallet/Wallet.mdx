@@ -1,0 +1,31 @@
+---
+name: Wallet
+route: /Wallet/
+---
+
+import { Hint } from '@nejcm/docz-theme-extended';
+
+<Hint type="warning" variant="outer">
+    Warning: proof of concept
+</Hint>
+
+# Wallet
+
+Attualmente esistono 3 wallets principali nell'ecosistema Algorand: Pera, MyAlgo, 
+AlgoSigner. Tuttavia numerosi sono i wallets che funzionano con algorand ed 
+attualmente sono tagliati fuori da numerose applicazioni. Per citarne alcuni: 
+Aikon ORE, Exodus, AWallet
+Sarà quindi necessario importare i plugin nella propria applicazione e settarli come 
+metodi di autenticazione:
+```jsx
+import { Pera, MyAlgo, AlgoSigner } from "longlink/wallets"
+
+ll.useWallet([Pera, MyAlgo, AlgoSigner])
+```
+Questo offrirà all’utente 3 possibilità di Loggare nell’applicazione. 
+È possibile e probabile che altri wallets o fork ed aggiornamenti dei wallets esistenti 
+vengano creati. LL permette di aggiungere altri wallets semplicemente aggiungendo alla 
+lista il plugin per interagire con il wallet. Nel caso in cui un wallet venga aggiornato 
+e l’API cambia, servirà solamente aggiornare il plugin di quel wallet e l’applicazione 
+continuerà a funzionare.
+
