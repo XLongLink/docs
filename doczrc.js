@@ -20,7 +20,7 @@ export default {
 	},
 	groups: {
 		"": [],
-		API: ["Components", "UI"],
+		API: ["Components"],
 	},
 	themeConfig: {
 		search: true,
