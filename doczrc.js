@@ -9,18 +9,14 @@ export default {
 	description: `${pkgName}.`,
 	base: "/docs",
 	menu: [
-		"Introduction",
-		"Installation",
-		{ name: "Components", menu: [] },
-		{ name: "UI", menu: [] },
 	],
 	menuDisplayName: {
-		UI: "User Interface",
-		Main: "Main Container",
 	},
 	groups: {
 		"": [],
-		API: ["Components"],
+		"Wallet": ["Wallet", "User authentication (ARC-0014)"],
+		"Frontend": ["Frontend", "Basics", "Chain data", "Transactions", "Events", "Non fungible domains", "Token", "Extra"],
+		"Backend": ["Backend", "Dashboard", "LongStorage", "Chain events & cloud functions", "Websocket"],
 	},
 	themeConfig: {
 		search: true,
